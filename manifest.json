@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "No Work We Trade",
+  "version": "1.0",
+  "description": "OTC Trading Assistant",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
