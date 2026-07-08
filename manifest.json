@@ -19,7 +19,8 @@
         "https://*.pocketoption.com/*"
       ],
       "js": [
-        "content.js"
+  "storage.js",
+  "content.js"
       ]
     }
   ]
