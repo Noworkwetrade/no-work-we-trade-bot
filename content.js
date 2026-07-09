@@ -2,28 +2,23 @@ console.log("no work we trade loaded")
 
 if (window.location.href.includes("pocketoption")) {
 
-    console.log("pocket option detected")
-
     const panel = document.createElement("div")
-
-    panel.id = "nwwt-panel"
 
     panel.innerHTML = `
     <div style="
     background:#111;
     color:#d4af37;
     padding:15px;
-    width:250px;
     border-radius:10px;
+    width:250px;
     font-family:Arial;
-    box-shadow:0 0 15px #000;
     ">
     <h3>No Work We Trade</h3>
-    <p>scanner connected</p>
-    <button id="startScanner">
+    <p>otc scanner connected</p>
+    <button id="nwwtScan">
     start scanner
     </button>
-    <p id="status">
+    <p id="nwwtStatus">
     waiting...
     </p>
     </div>
@@ -37,12 +32,10 @@ if (window.location.href.includes("pocketoption")) {
     document.body.appendChild(panel)
 
 
-    document
-    .getElementById("startScanner")
-    .onclick = function(){
+    document.getElementById("nwwtScan").onclick = () => {
 
-        document.getElementById("status").innerText =
-        "scanning chart..."
+        document.getElementById("nwwtStatus").innerText =
+        "scanning otc chart..."
 
     }
 
