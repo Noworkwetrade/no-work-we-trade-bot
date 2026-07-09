@@ -34,9 +34,12 @@ if (window.location.href.includes("pocketoption")) {
 
     document.getElementById("nwwtScan").onclick = () => {
 
-        document.getElementById("nwwtStatus").innerText =
-        "scanning otc chart..."
+    document.getElementById("nwwtStatus").innerText =
+    "looking for market data..."
+
+    console.clear()
+
+    console.log("window keys")
+    console.log(Object.keys(window))
 
     }
-
-}
